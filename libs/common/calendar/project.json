@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/common/calendar/src",
+  "prefix": "ae",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/common/calendar"],
+      "options": {
+        "jestConfig": "libs/common/calendar/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/common/calendar/**/*.ts",
+          "libs/common/calendar/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

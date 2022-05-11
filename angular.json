@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "common-auth": "libs/common/auth",
+    "common-calendar": "libs/common/calendar",
     "common-landing-page": "libs/common/landing-page",
     "main-app": "apps/main-app",
     "main-app-e2e": "apps/main-app-e2e",

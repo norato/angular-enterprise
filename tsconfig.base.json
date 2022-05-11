@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@ae/common/auth": ["libs/common/auth/src/index.ts"],
+      "@ae/common/calendar": ["libs/common/calendar/src/index.ts"],
       "@ae/common/landing-page": ["libs/common/landing-page/src/index.ts"],
       "@ae/main/feature-shell": ["libs/main/feature-shell/src/index.ts"],
       "@ae/shared/ui-components": ["libs/shared/ui-components/src/index.ts"]

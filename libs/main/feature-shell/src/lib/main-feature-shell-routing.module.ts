@@ -10,7 +10,11 @@ export const mainfeatureShellRoutes: Route[] = [
   {
     path: '',
     loadChildren: () => import('@ae/common/auth').then(m => m.CommonAuthModule),
-  }
+  },
+  {
+    path: '',
+    loadChildren: () => import('@ae/common/calendar').then(m => m.CommonCalendarModule),
+  },
 ];
 
 @NgModule({
