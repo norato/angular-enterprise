@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "cliente-lol": "apps/cliente-lol",
+    "cliente-lol-calendar": "libs/cliente-lol/calendar",
     "cliente-lol-e2e": "apps/cliente-lol-e2e",
     "cliente-lol-feature-shell": "libs/cliente-lol/feature-shell",
     "common-auth": "libs/common/auth",

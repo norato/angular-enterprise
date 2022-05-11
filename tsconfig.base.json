@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ae/cliente-lol/calendar": ["libs/cliente-lol/calendar/src/index.ts"],
       "@ae/cliente-lol/feature-shell": [
         "libs/cliente-lol/feature-shell/src/index.ts"
       ],
