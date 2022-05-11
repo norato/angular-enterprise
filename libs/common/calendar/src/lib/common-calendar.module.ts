@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { CalendarComponent } from './calendar/calendar.component';
-import { CalendarTitleComponent } from './containers/calendar-title/calendar-title.component';
+import { CommonCalendarContainersModule } from './common-calendar-containers.module';
 
 @NgModule({
   imports: [
     CommonModule,
-
     RouterModule.forChild([{ path: 'calendar', component: CalendarComponent }]),
+    CommonCalendarContainersModule
   ],
-  declarations: [CalendarComponent, CalendarTitleComponent],
+  declarations: [CalendarComponent],
 })
 export class CommonCalendarModule {}
