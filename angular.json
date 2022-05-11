@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
+    "cliente-lol": "apps/cliente-lol",
+    "cliente-lol-e2e": "apps/cliente-lol-e2e",
     "common-auth": "libs/common/auth",
     "common-calendar": "libs/common/calendar",
     "common-landing-page": "libs/common/landing-page",

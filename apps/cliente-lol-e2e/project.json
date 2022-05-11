@@ -1,0 +1,27 @@
+{
+  "sourceRoot": "apps/cliente-lol-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/cliente-lol-e2e/cypress.json",
+        "devServerTarget": "cliente-lol:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "cliente-lol:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/cliente-lol-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["cliente-lol"]
+}
