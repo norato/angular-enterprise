@@ -40,6 +40,7 @@
     "@nrwl/storybook": "14.1.4",
     "@nrwl/workspace": "14.1.4",
     "@storybook/addon-essentials": "~6.4.12",
+    "@storybook/angular": "^6.4.22",
     "@storybook/core-server": "~6.4.12",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.7",
