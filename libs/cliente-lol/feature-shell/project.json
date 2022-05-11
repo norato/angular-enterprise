@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/cliente-lol/feature-shell/src",
+  "prefix": "ae",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/cliente-lol/feature-shell"],
+      "options": {
+        "jestConfig": "libs/cliente-lol/feature-shell/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/cliente-lol/feature-shell/**/*.ts",
+          "libs/cliente-lol/feature-shell/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
