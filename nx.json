@@ -1,5 +1,5 @@
 {
-  "npmScope": "angular-enterprise",
+  "npmScope": "ae",
   "affected": {
     "defaultBase": "main"
   },

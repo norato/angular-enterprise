@@ -1,7 +1,7 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/main-app/src",
-  "prefix": "angular-enterprise",
+  "prefix": "ae",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",

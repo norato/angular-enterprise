@@ -1,7 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/main/feature-shell/src",
-  "prefix": "angular-enterprise",
+  "prefix": "ae",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

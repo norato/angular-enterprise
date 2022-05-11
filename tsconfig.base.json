@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-enterprise/main/feature-shell": [
+      "@ae/main/feature-shell": [
         "libs/main/feature-shell/src/index.ts"
       ]
     }
