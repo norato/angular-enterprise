@@ -5,7 +5,16 @@ import { Route, RouterModule } from '@angular/router';
 
 import { ClienteLolFeatureShellComponent } from './cliente-lol-feature-shell/cliente-lol-feature-shell.component';
 
-export const clienteLolFeatureShellRoutes: Route[] = [];
+export const clienteLolFeatureShellRoutes: Route[] = [
+  {
+    path: '',
+    loadChildren: () => import('@ae/common/landing-page').then(m => m.CommonLandingPageModule),
+  },
+  {
+    path: '',
+    loadChildren: () => import('@ae/common/auth').then(m => m.CommonAuthModule),
+  },
+];
 
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(clienteLolFeatureShellRoutes), SharedUiComponentsModule],
