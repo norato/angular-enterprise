@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "common-landing-page": "libs/common/landing-page",
     "main-app": "apps/main-app",
     "main-app-e2e": "apps/main-app-e2e",
     "main-feature-shell": "libs/main/feature-shell"

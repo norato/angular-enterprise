@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/common/landing-page/src",
+  "prefix": "ae",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/common/landing-page"],
+      "options": {
+        "jestConfig": "libs/common/landing-page/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/common/landing-page/**/*.ts",
+          "libs/common/landing-page/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

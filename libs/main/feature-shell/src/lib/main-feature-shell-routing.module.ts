@@ -1,13 +1,18 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { Route, RouterModule } from '@angular/router';
 
 
-
+export const mainfeatureShellRoutes: Route[] = [
+  {
+    path: '',
+    loadChildren: () => import('@ae/common/landing-page').then(m => m.CommonLandingPageModule),
+  }
+];
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule
-  ]
+    RouterModule.forRoot(mainfeatureShellRoutes),
+  ],
+  exports: [RouterModule],
 })
 export class MainFeatureShellRoutingModule { }
