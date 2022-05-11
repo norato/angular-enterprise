@@ -14,6 +14,10 @@ export const clienteLolFeatureShellRoutes: Route[] = [
     path: '',
     loadChildren: () => import('@ae/common/auth').then(m => m.CommonAuthModule),
   },
+  {
+    path: '',
+    loadChildren: () => import('@ae/cliente-lol/calendar').then(m => m.ClienteLolCalendarModule),
+  },
 ];
 
 @NgModule({

@@ -2,14 +2,20 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { ClienteLolCalendarComponent } from './cliente-lol-calendar/cliente-lol-calendar.component';
+
 @NgModule({
   imports: [
     CommonModule,
 
     RouterModule.forChild([
-      /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
+      {
+        path: 'calendar',
+        pathMatch: 'full',
+        component: ClienteLolCalendarComponent,
+      },
     ]),
   ],
-  declarations: [],
+  declarations: [ClienteLolCalendarComponent],
 })
 export class ClienteLolCalendarModule {}
