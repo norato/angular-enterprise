@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/common/auth/src",
+  "prefix": "ae",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/common/auth"],
+      "options": {
+        "jestConfig": "libs/common/auth/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/common/auth/**/*.ts",
+          "libs/common/auth/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
